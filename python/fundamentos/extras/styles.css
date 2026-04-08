@@ -1,0 +1,159 @@
+header {
+    background-color: #ffffff;
+    padding: 10px 20px;
+    font-family: Arial, sans-serif;
+}
+.c1 {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.c1 h1 img {
+    background-color: #861680;
+    height: 30px;
+    width: 30px;
+}
+input {
+    width: 40%;
+    height: 30px;
+    border-radius: 15px;
+    border: 1px solid #cccccc;
+    padding: 0 10px;
+}
+button {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    height: 30px;
+    padding: 0 10px;
+    border: 2px black solid;
+    border-radius: 20pc;
+    background-color: rgb(255, 174, 212);
+}
+button img {
+    height: 25px;
+    height: 25px;
+}
+.c2 {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    font-size: 14px;
+}
+.c2 h3 {
+    font-weight: normal;
+}
+.negro {
+    margin-top: 10px;
+    height: 3px;
+    background-color: black;
+    border: none;
+}
+.holal {
+    text-align: center;
+    margin: 20px 0;
+    font-family: Arial, sans-serif;
+}
+.cuerpo {
+    display: flex;
+    gap: 15px;
+    padding: 0 20px;
+    margin-top: 50px;
+    font-family: Arial, sans-serif;
+}
+.info {
+    background-color: #a31a91;
+    color: white;
+    width: 25%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+}
+.info p {
+    margin: 0;
+}
+.info h3 {
+    margin: 0;
+}
+.imagen img {
+    width: 100%;
+    content: url("assets/succulents-1.jpg");
+    border: 2px black solid;
+}
+.imagen img:hover {
+    content: url("assets/succulents-2.jpg");
+    border: 2px black solid;
+}
+.lado {
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-left: 350px;
+}
+.img2 {
+    height: 120px;
+    overflow: hidden;
+    border: 2px black solid;
+}
+.img2 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border: 2px black solid;
+}
+.texto2 {
+    background-color: #a31a8c;
+    color: white;
+    padding: 15px;
+}
+.inferior {
+    margin-top: 50px;
+    background-color: #f5d6f5;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 20px;
+}
+.inferior div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 15%;
+}
+.inferior img {
+    width: 100%;
+    max-width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border: 2px black solid;
+}
+.inferior p {
+    margin-top: 8px;
+    font-size: 13px;
+    text-align: center;
+}
+.cookies {
+    position: fixed;
+    bottom: 2%;
+    left: 30%;
+    background-color: #222;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    font-size: 14px;
+    font-family: Arial, sans-serif;
+}
+.cookies button {
+    background-color: #a31a81;
+    border: none;
+    padding: 10px 15px;
+    color: white;
+    border-radius: 5px;
+}
+.cookies button:hover {
+    background-color: #86166e;
+}

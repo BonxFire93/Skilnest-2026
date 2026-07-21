@@ -1,0 +1,36 @@
+body {
+    background-image: url(https://st3.depositphotos.com/1184748/15131/i/450/depositphotos_151311046-stock-photo-colorful-background-realistic-flickering-analog.jpg);
+}
+.cabeza {
+    color: pink;
+    margin-top: 5%;
+    height: 30pc;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+.hola {
+    color: pink;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: center;
+}
+img {
+    border-radius: 50pc;
+    height: 20pc;
+    width: 20pc;
+}
+button {
+    color: pink;
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS5ZrXnKjW6S8-R81AcO8aBhOaPwiUrDvlt2g&s);
+    width: 10pc;
+    height: 2pc;
+}
+.proyectos {
+    color: pink;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    height: 10pc;
+}

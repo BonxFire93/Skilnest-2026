@@ -1,0 +1,671 @@
+variable: espacio en la memoria de un computador que tiene un nombre
+
+11-3
+
+NOTA: El plan de trabajo puede tener ajustes según el ritmo y necesidades del grupo.
+1.- fundamentos de Phyton y OOP
+2.- Flask + MySQL
+3.- Cinturón
+4.- AJAX
+5.- Proyecto final
+
+js: condicionales:
+if ("condición") {
+	console.log ("hola")
+	}
+
+en python no se usan llaves
+Python: condicionales:
+if "condición":
+	print("hola")
+
+Tipos de datos primitivos
+Cada variable almacena un tipo especifico de información.
+Existen los tipos primitivos y compuestos
+Que es un tipo de dato?
+Define qué tipo de valor puede almacenar una variable y cómo ese valor puede  utilizarse dentro de un programa.
+tipos de datos primitivos
+Son los básicos del lenguahe, utilizados para representar valores simples.
+Ejemplos:
+-Booleanos
+-Números
+-Strings
+
+Tipos de datos compuestos
+Son estructuras que permiten agrupar varios datos dentro de una misma variable
+Ejemplos:
+-Listas []
+-Tuplas ()
+-Diccionario {}
+
+Tipos de datos: Numericos
+#int - enteros
+#float - decimales
+#complex - complejos
+#podemos usar type() para saber el tipo de numero
+EJ:
+print(type(10))
+print(type(3.14))
+
+float(10)   # 10.0
+int (3.9)   # 3
+
+import random
+random.randint(5,10)
+
+Cadenas / Strings
+secuencia de caracteres(texto) que se escribe entre comillas simples o dobles
+
+concatenar texto y variables
+
+con comas en rpint()
+
+con+
+Para unir texto con números, se debe convertir convertir el números string:
+		print("edad: " + str(25))
+
+numero: pensamiento
+numeral: forma de representarlo (caracter)
+
+Interpolación de cadenas
+
+f-strings (Forma más usada)
+	nombre = "Angelo"
+	edad = "29"
+	print(f"Mi nombre es {estudiante} y tengo {edad} años")
+.format()
+	print("Mi nombre es {} y tengo {} años".format(nombre, edad))
+
+DATOS:
+booleanos: representa valores de lógica binaria, siendo los únicos posibles verdadero (true o 1) o falso (false o 0).
+Fundamentales en programación y álgebra booleana, se utilizan para controlar el flujo de programas (condicionales) y realizar búsquedas precisas, usando operadores lógicos como AND, OR y NOT.
+
+Listas.
+
+estructura de datos que permite guardar un conjunto de valores.
+imagina que las listas son cajoneras, en donde cada cajón del mueble guarda cierta información.
+Para definir una lista colocamos corchetes [], y dentro de ingresamos los valores separados por comas.
+Las listas son dinamicas, es decir que podemos agregar o eliminar datos en el momento que necesitemos; tambien son mutables, es decir que sus elementos pueden ser modificados
+	lista_vacia = []
+	lista_compras = ['tomate', 'pan', 'queso', 'jamón']
+en python las listas pueden tener diferentes tipos de datos
+lista_especial = [1, 2 ['a', 'b', 'c'], True]
+________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________
+
+12-03
+Diccionarios
+
+un diccionario es una estructura de datos que almacena informacion en pares clave: valor
+Este tipo de dato esta envuelto entre llaves
+Cada elemento del diccionario se llama llaves
+
+caracteristicas:
+-Accedemos a los datos mediante una clave
+-son mutables y dinámicos
+-Pueden contener distintos tipos de datos
+-Son colecciones desordenadas
+
+estudiante = {
+	"nombre": "Gonzalo" clave : Valor
+	"curso" : "Python"  clave : Valor
+}
+
+Operaciones con diccionarios
+verificar si existe una clave
+
+paises = {}
+paises["CL"] = "Chile"
+paises["MEX"] = "Mexico"
+paises["COL"] = "Colombia"
+paises["US"] = "Estados Unidos"
+
+if "CRI"
+
+oaises.pop("MEX")
+
+del paises["COL"]
+
+Metodos comunes
+- len(diccionario)
+-.keys()
+-.values
+-.items
+
+Condicionales
+Una sentencia condicional es una estructura de control que permite ejecutar distintos bloques de codigo dependiendo de si una condicion es verdadera o falsa.
+
+sentencia: unidad funcional más pequeña (una instrucción o línea de código) que ordena a la computadora realizar una acción específica
+expresiones: un valor
+
+la sintasix de python se carcteriza por:
+-uso de dos puntos:
+-identificacion obligatoria
+-Bloques de codigo definidos por la identificacion
+
+utilizaremos tres palabras clave:
+-if "si esta esta condicion se cumple"
+-elif: permite evaluar multiples condiciones (algo intermedio)
+-else "si esta condicion no se cumple"
+
+edad = 18
+if edad >= 18:
+	print("Eres mayor de edad")
+else:
+	print("Eres menor de edad")
+
+Operadores:
+= "igual"
+!= "distinto"
+> "mayor que"
+< "menor que"
+>= "mayor o igual"
+<= "menor o igual"
+
+Operadores logicos
+
+Operador:
+and "ambas condiciones seben ser verdaderas"
+or "al menos una condicion verdadera"
+not "invierte el valor logico"
+
+Desafio de condicionales
+Un sistema debe decididir si una persona puede entrar a un evento.
+las reglas son:
+-La edad minima para entrar es 18
+-si la persona tiene menos de 16 y 17 años, solo puede entrar si viene con un adultos
+-si la persona tiene mas de 60 años, entra automaticamente con un descuento especial.
+________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________
+
+16-03
+
+Condicionales:
+Regla practica
+1. primero validar errores
+2. luego casos especiales
+3. luego casos generales
+
+Desafio operadores lógicos y de comparación
+
+recordemos:
+Las condiciones en Python siempre se evalúan como:
+True -> Verdadero
+False -> Falso
+Los condiconales toman decisiones según ese resultado.
+
+Ej1.
+edad = 19
+tiene_entrada = False
+
+print(edad >= 18 and tiene_entrada)
+
+Ej2.
+nota = 55
+asistencia = 80
+
+print(nota >= or asistencia >= 75)
+
+Bucles.
+
+Obj:
+-Aprender cómo hacer bucles usando range
+-Recorrer cadenas, listas y diccionarios
+-Comprender el uso del bucle while
+
+Que es el bucle?
+Un bucle es una estructura que permite reoetir un bloque de codigo varias veces, mientras se cumpla una condicion o exista una secuencia por recorrer.
+En Python usamos principalmente:
+-for
+-while
+
+Bucle for con range()
+la funcion range() genera secuencias de numeros.
+Se puede usar con:
+
+i -> "variables de control"
+cualquier letra,  se puede reemplazar con lo que sea, es una variable especial momentaneo que se usa dentro de un bucle.
+
+1 argumento (Fin)
+	for i in range(4):
+		print(i)
+2 argumentos (inicio, fin)
+	for i in range(2, 8):
+		print(i)
+3 argumentos (inicio, fin, paso)
+	for i in range(2, 10, 3):
+		print(i)
+
+Rangos incrementales y decrementales
+Puedo utilizar esta funcion de rango para aumentar o decrementar mi secuencia
+
+incremenyal
+	for i in range(0, 15, 3):
+		Print(i)
+decremental
+	for i in rangea (10, 1, -3):
+		print(i)
+
+Bucle for: Recorrer cadenas (Strings)
+los bucles pueden ser utilizados para recorrer cuaqluier secuencia en Python.
+Gracias a esto podemos iterar de una cadena a través de un for.
+
+	for letra in "Python":
+		print(letra)
+
+importante: "letra" es una variable de control, como un contenedor temporal que guarda un solo elemento de la secuencia.
+Puedo utiliza caulquier nombre para esta variable de control: x, i, letra, elemento, etc. 
+________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________
+
+17-03
+
+Buccle for: Recorrer diccionarios
+los diccionarios tambien pueden ser recorridos.
+al hacer la interacion a traves de un deccionario, el iterador es cada una de las claves establecidas en el diccionario.
+
+	estudiante = {"nombre": "Gonzalo", "curso": "Python"}
+	for clave in estudiante:
+		print(clave)
+	#Imprime: nombre, curso
+
+	estudiante = {"nombre": "Gonzalo", "curso": "Python"}
+	for clave in estudiante:
+		print(estudiante[clave])
+	#imprime: Gonzalo, Python
+
+en el caítulo de diccionario vimos metodos que nos permitian obtener las secuencias con los valores, clave y elementos de un diccionario.
+prueba el siguiente fragmento de codigo:
+
+item: PAR DE DATOS EN UN DICCIONARIO ("clave":"valor")
+
+	platillos_tipicos = {"Mexico":"Tacos", "Colombia":"Ajiaco", "Costa Rica":"Casado"}
+	#otra forma de iterar a traves de las claves
+	for clave in  platillos_tipicos.keys():
+		print(clave)
+	#imprime: mexico, colombia, costa rica
+
+	#iteramos a traves de los valores
+	for valor in platillos_tipicos.values():
+		print(valor)
+	#imprime: tacos, ajiaco, casado
+
+	#iteramos a travez de los elementos (clave-valor)
+	for clave, valor in platillos_tipicos.items():
+		print(clave, "=", valor)
+	#imprime: mexico = tacos, colombia = ajiaco, costa rica = casado
+
+() = Tuplas
+[] = Listas
+{} = Diccionarios
+
+Bucle while
+la sentencia while es otra manera en la que podemos crear un bucle; esta va a ser repetida ,mientras (while en ingles) la condicion sea VERDADERA.
+
+	while "condicion":
+		#codigo que se ejecuta mientras la condicion se cumpla
+
+	num = 0
+
+	while num < 4:
+		print("bucle while -", num)
+		num += 1
+	#imprime: bucle while - 0, bucle while - 1, bucle while - 2, bucle while - 3
+
+Bucle while : Else
+todos los cucles while incluyen una condicion, pero ¿que sucede si la condicional no se cumple u aun queremos ejecutar algo? En estas ocasiones utilizaremos la sentencia else con el bucle.
+
+	while num < 4:
+		print("bucle while -", num)
+		num += 1
+	else
+
+Control de Bucles: Break
+En capitulos anteriores aprendimos sobre estructuras de control de flujo con las sentencias if y else.
+los bucles, breaks y continues tambien son parte de estas estructuras de control de flujo.
+
+Break
+termina de formar definitiva el bucle y continua con la primera sentencia despues del bucle.
+el break se puede utilizar tanto para bucles for como para while.
+
+	for letra in "detente":
+		if letra == "n":
+			break
+		print(letra)
+	#Imprime: d, e, t, e
+
+Control de Bucles: Continue
+la sentencia continue regresa el control al comienzo del bucle; de alguna manera a travez de continue podemos "saltar" todas las sentencias restantes en la iteracion actual del bucle y despues continua de forma normal
+
+	for letra in "detente":
+		if letra == "n":
+			continue
+		print(letra)
+	#Imprime: d, e, t, e, t, e
+
+sumar (num1, num2) = parametros de una funcion
+
+valor asigando a un parametro = argumento
+________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________
+
+18-03
+
+Parametros por defecto y argumentos de palabras clave
+________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________
+
+19-03
+
+Usar JSON
+ya sabemos manejar deccionarios en memoria.
+el problema es que cuando cerramos el programa, los datos se pierden.
+JASON nos permite guardarlos en un archivo.
+
+	import json
+	# GUARDAR - convertir lista/diccionario a archivo .json
+	alumnos = [
+		{"nombre":"Martina", "promedio":6.5}
+		{"nombre":"Diego", "promedio":5.8}
+	]
+
+	with open("alumnos.json", "w") as archivo:
+		json.dump(alumnos, archivo)
+
+	# CARGAR - leer el archivo .jason y convertirlo de vuelta
+	with open("alumnos.json", "r") as archivo:
+		alumnos = json.lead(archvio)
+
+________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________
+
+30-03
+
+Python es interpretado: el código se ejecuta linea a linea. El Shell te permite experimentar al instante.
+________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________
+
+01-04
+
+que es una clase (class): es un molde base para crear un objeto, y esos objetos llevan el nombre de instancias
+self: representa un objeto
+metodo: funcion definida dentro de una clase
+instancia: objeto creado por una clase
+variable de control: nos permiten guardar el conteo de un bucle
+
+Metodos:
+-Instancia (self,...)
+	-> __init__ = constructor
+	los atributos se ven algo asi: self.x = x
+
+-Clase (cls,...) = representa la clase completa
+	-> @classmethod = Decorador
+
+-Estaticos() = forma de probar dentro de una clase, en caso de que no tenga acceso a algun tipo de acceso
+	-> @staticmethod
+	-> muy parecido a una funcion normal
+
+________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________
+
+08-04-2026
+
+Herencia:La herencia es una característica clave en la programación orientada a objetos que nos permite reutilizar código de manera eficiente.
+	Nos permite evitar la repetición de código al heredar comportamientos y características de una clase principal a clases secundarias.
+	Además, nos permite aprovechar clases predefinidas escritas por otros desarrolladores sin necesidad de modificarlas.
+________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________
+
+14-04-2026
+
+Flask
+Flask es un microframework web ligero y flexible escrito en Python, diseñado para crear aplicaciones web, APIs y microservicios de manera rápida y sencilla.
+Se clasifica como "micro" porque proporciona herramientas básicas (enrutamiento, manejo de solicitudes) sin imponer componentes, permitiendo al desarrollador elegir sus propias librerías para bases de datos o validación.
+
+microframework: Un microframework es un marco de desarrollo web minimalista y ligero, diseñado para manejar solicitudes HTTP y rutas con funcionalidad esencial, careciendo de componentes pesados como ORM o validación automática de datos.
+Se enfoca en la simplicidad, flexibilidad y el rendimiento, siendo ideal para microservicios, APIs y prototipado rápido. (metodologia)
+
+Angularfront end
+
+Flask -> Crear un servidor web
+-Metodos Post Get
+-Formularios
+-Rutas
+-Redirecciones
+-Renderizado
+
+cuando un usuario manda un dato a la pagina web devemos usar el metodo post, para enviarlo al servidor
+
+Cuando estamos desarrollando, es común colaborar en distintos proyectos o equipos dentro de nuestro entorno laboral.
+Aunque estos proyectos puedan estar escritos en el mismo lenguaje de programación, es posible que utilicen distintas versiones y paquetes a lo largo del desarrollo.
+La pregunta que surge es: ¿Cómo podemos mantenernos organizados y evitar conflictos con nuestro sistema operativo? La solución que ofrece Python son los entornos virtuales.
+
+entorno virtual: espacio virtual aislado del entorno de mi compútador para poder desarrollar un proyecto
+
+Como se ve un proyecto
+
+crear entorno = python -m pipenv install fly ask 
+
+entrar al entorno = pipenv shell
+
+__name__ : me permite saber si el archio esta siendo llamado por otro archivo, cuando name sea main, quiere decir que este es el principal, y los demas archivos secundarios quedan como name
+
+Dentro de esta class Flask, tenemos un decorador llamado app.Route() = @app.Route('/')
+
+Que es pip?
+pip es el gestor de paquetes oficial de Python
+Permite instalar, actualizar y eliminar bibliotecas externas desde PypI (Python Package Index)
+comandos:
+pip install flask
+pip uninstall flask
+pip list
+pip freeze
+pip install -r requirements.txt
+
+El problema sin entornos virtuales
+Python solo permite UNA version de cada paquete instalada globalmente
+si instalas Flask 3.0 para el Proyecto B, el Proyecto A se rompe porque necesita Flask 1.1.
+
+Crear un entorno virtual
+1.- Crar carpeta del proyecto
+	mkdir mi_proyecto && cd mi_proyecto
+
+2.- Crear el entorno virtual
+	python -m venv venv / python -m pipenv install flask
+
+Activar y desactivar el entorno
+sistema operativo -> comando para activar
+Windows(cmd) -> venv\Scripts\activate
+Windows(PowerShell) -> venc\Scripts\activate
+________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________
+
+22-04-2026
+
+Reglas de un archivo flask, server.py
+
+proyecto:
+-templates (carpeta)
+-static (archivo)
+-server.py (archivo)***
+-pipfile (archivo) } Entotno Virtual
+-pipfile.lock (archivo) } Entorno Virtual
+
+server.py:
+	1.- from flask import Flask #zona de importaciones
+	2.- app = Flask(__name__)
+		#rutas
+	3.- @app.route('/')
+		def ruta:
+			return f'Wazaa'
+		#ejecutar server/app
+	4.- if __name == '__main__'
+			app.run(debug = True)
+________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________
+
+27-04-2026
+
+Repaso pip e import
+
+Cómo lo decimos a Python que use Flask
+
+pip -> instala paquetes externos
+
+import -> gfcjytcdkuygcv
+
+Rutas con variables
+El nombre entre <> se conviere en parámetro
+REGLA: El nombre entre <> en la ruta debe coincidir con el parámetro de la función.
+
+string: varaible dentro de comillas
+________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________
+
+28-04-2026
+
+Que es Jinja2?
+
+EL motor de plantillas que viene con Flask
+
+Una Plantilla es un HTML con "huecos".
+
+Esos huecos los rellena Flask con datos antes de enviar la pagína al navegador.
+Eso es Jinja2: el lenguaje que usamos dentro del HTML para indicar dónde van los datos
+
+Variables -> {{ nombre }}
+Bucles {% for x in lista%}
+Condiciones {% if pokemon %}
+
+Sintaxis de Jinja2
+
+Tres tipos de "llaves" que tienes que reconocer
+
+{{ ... }} -> Variables: Imprimen un valor en el HTML
+{% ... %} -> Lógica: for, if, else, endif, endofr
+{# ... #} -> Comentarios: No se muestran en el HTML final
+
+Bucles for - recorrer una lista
+
+Genera HTML repetido para cada elemento
+
+	Jugadores = [
+		{"nombre":"AlexGamer", "puntaje": 5000},
+		{"nombre":"PixelMaster", "puntaje":"7500"},
+		{"nombre":"ShadowNinja", "puntaje":"8500"},
+	]
+	@app.route("/ranking")
+	def renking():
+		return render_template("ranking.html", jugadores = jugadores)
+___________________________________________________________________________________
+
+#templates/ranking.html
+	<ul>
+		{% for jugador in jugadores %}
+		<li>
+			{{ jugador.nombre }} -
+			{{ jugador.puntaje }} pts
+		</li>
+		{% endfor %}
+	</ul>
+
+REGLA DE ORO: Todo {% for %} debe cerrar con {% endflor %}.
+Lo mismo con {% if %} -> {% endif %}.
+Si lo olvidas, error 500
+
+ACCESO A DICCIONARIOS: Dentro de la plantilla puedes usar tanto jugador.nombre como jugador['nombre'].
+Las dos formas funcionan.
+
+Loop - variables especiales del bucle
+
+Jinja2 te regala datos extras dentro de cada {% for %}
+
+Condicional if - mostrar u ocultar HTML
+
+Decide en tiempo real qué bloque incluir
+
+{# CASO 1: una sola ficha #}
+{% if pokemon %}
+	<h1>{{ pokemon.nombre }}</h1>
+	<p>Tipo: {{ pokemon.tipo }}</p>
+
+{# CASO 2: una lista de pokemon#}
+
+#NO ALCANCE A ESCRIBIRLO :(
+
+Filtros - transformar valores
+
+Se aplican con | (pipe) dentro de las llaves
+
+{{ nombre|upper }} -> MAYÚSCULAS
+{{ nombre|title }} -> Capitalizar Cada Palabra
+{{ valor|default }} -> Valor por defecto si está vacío
+{{ nombre|lower }} -> minúsculas
+{{ lista|lenght }} -> Cantidad de elementos
+{{ precio|round(2) }} -> Redondear decimales
+
+Archivos estáticos
+
+CSS, imágenes y JS que no cambain con cada petícion
+
+La carpeta static/ y url_for()
+
+Cómo Flask sirve archivos que no cambian
+
+¿Qué son?
+Archivos que el servidor entrega tal cual al cliente, sin modificarlos: hojas CSS, imágenes, JS.
+
+¿Dónde van?
+En ua carpeta llamada static/ que debe estar al lado de app.py
+
+¿Cómo se enlazan?
+Con la función url_for() dentro del HTML. Flask construye la URL correcta automaticamente
+
+Organizar la carpeta static/
+
+Buena práctica: subcarpetas por tipo de archivo
+
+mi_app/
+->	->app.py
+->	->templates/
+->	->	->index.html
+->	->static/
+->	->	->css/
+->	->	->	->style.css
+->	->	->js/
+->	->	->	->spp.js
+->	->	->img/
+->	->	->	->logo.png
+->	->	->	->picachu.png
+________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________
+
+06-05-2026
+
+Atributo action: Esta es la ruta que se encarga de procesar el formulario (NO muestra el formulario).
+En un momento más la configuraremos.
+
+Atributo method: Se refiere al tipo de solicitud con la que estaremos enviando el formulario.
+Como valores podemos tener GET y POST.
+En caso de no colocar el valor de method, por defecto será GET.
+
+Elementos input: Estos son los elementos que se encargan de recopilar la información que el usuario ingresa.
+Consulta los distintos valores para type aquí.
+También puedes agregar otros elementos de formularios, como select y textarea; puedes verificarlos aquí.
+Importante: cada elemento debe tener un valor único para el atributo name.
+
+Enviar el formulario: Podemos utilizar dos formas distintas: <input type=’submit’> o <button>Enviar</button>. NUNCA <input type=’button’>
+
+¡Siempre redirecciona después de manejar los datos POST para evitar que los datos sean procesados más de una vez!
+
+Una sesión es como una conversación persistente entre el cliente (por ejemplo, un navegador web) y el servidor.
+Durante esta conversación, el servidor puede recordar información sobre el usuario, como su inicio de sesión o preferencias, para que la aplicación web pueda personalizar la experiencia del usuario en diferentes páginas o visitas al sitio.
+
+¿Recuerdas al principio del curso, cuando creamos múltiples funciones en un solo archivo? La información y acciones de cada función era independiente, es decir que las funciones no tenían acceso a los datos de otras funciones a pesar de encontrarse en el mismo lugar.
+Aquí sucede lo mismo, cada método que maneja una ruta es independiente del resto de las rutas.
+Esto sucede dado a que el ciclo de solicitud y respuesta de HTTP no tiene estado.
+¿Que significa esto? Que cada ciclo de solicitud/respuesta es independiente e ignora por completo la existencia e información del resto de las solicitudes.
+Pero entonces, ¿cómo hacen los sitios web para recordar cuando alguien ya se registró, o la información de nuestro carrito de compras cuando estamos comprando? Esto se debe a que utilizan almacenamiento persistente de datos.
+Una forma de persistencia muy usual es la sesión.
+________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________
+
+11-05-2026
+
+name = nombre con el que llegaran los valores entregados
+method = metodos autorizados
+get = empresa a usuario
+post = usuario a empresa
+________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________
+
+14-05-2026
+
+Entidad: representación de un objeto, concepto, lugar o persona del mundo real sobre el cual se almacena información estructurada.
+Campo: unidad básica donde se almacena información específica.
+Clave: es un atributo (columna) o conjunto de atributos que identifica de manera única cada fila (registro) en una tabla.

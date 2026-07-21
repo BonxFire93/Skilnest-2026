@@ -1,0 +1,15 @@
+{
+  "Player": {
+    "KazzeTheRandom.plr": true,
+    "Cynthia2.plr": false
+  },
+  "World": {
+    "Land_of_winds.wld": false,
+    "Mundo_De_Pana.wld": false,
+    "Extraño_Lágrimas.wld": false,
+    "New_Lands_Of_Wind.wld": true,
+    "WHAT_ARE_THOSE.wld": false,
+    "TerraSeedsprobs.wld": false,
+    "A_world_indeed.wld": false
+  }
+}

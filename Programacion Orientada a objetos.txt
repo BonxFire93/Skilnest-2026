@@ -1,0 +1,49 @@
+23-3
+
+Que es la POO?
+Una nueva forma de pensar el código
+Hasta ahora hemos escrito código como lista de instrucciones que se ejecuta de arriba hacia abajo.
+La ProgramacionOrientada a Objetos (POO) es un paradigma distinto: organizamos el codigo en torno a objetos que representan cosas del mundo real.
+
+En lugar de pensar en pasos..
+..pensamos en OBJETOS que tienen carcateristicas (atributos) y copmportamientos (métodos).
+
+Analogia: El mundo real vs el codigo.
+
+Que es una Clase?
+La clase es el molde; el objeto esw lo que fabricas con ese molde
+Una clase es como un plano o un molde. Défine cómo será un objeto: qué datos tendrá y qué podrá hacer.
+Cuando usamos ese molde para crear algo concreto, obtenemos un objeto (también llamado instancia).
+
+Metáfora: Cookie Cutter
+La Clase = el cortador de galletas
+El Objeto = cada galleta individual
+
+Todas salen del mismo del mismo molde, pero pueden tener diferente decoración.
+
+instancia: objetos creador por una clase.
+
+Atributos.
+Los datos que describe a cada objeto
+Los atributos son las caracteristicas o propiedades de un objeto. Cada objeto puede tener valores distintos para los mismos atributos.
+
+Ej:  Clase Usuario
+-nombre
+-email
+-edad
+-activo
+
+Metodos
+Las acciones o comportamientos de un objeto
+Un método es una funcion definida dentro de una clase.
+La diferencia clave: siempre recibe self como primer parámetro, para poder acceder a los datos del objeto.
+
+Regla de ORO:
+Todo método, que afecte al objeto mismo, dentro de una clase siempre recibe self como primer argumento.
+Self = "yo mismo" (el objeto actual)
+
+Anatomia de un metodo
+-def: Palabra clave para definir un método
+-self: Siempre primero. Referencia al objeto actual
+-destinatario, texto: Parametros extra que recine el metodo
+-

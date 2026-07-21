@@ -1,0 +1,30 @@
+clases para nuestro proyecto de feria TP:
+
+personaje:
+	moviemiento
+	gravedad
+	salto
+	esprin
+	ataque
+	coliciones
+	salud
+	daño de ataque
+
+npc's:
+	globo de texto
+	movimiento basico
+
+enemigos:
+	movimientos basicos
+	ataque
+	salud
+	coliciones
+	daño de ataque
+
+boss:
+	movimiento
+	ataque
+	patron de ataque
+	coliciones
+	salud
+	daño de ataque
